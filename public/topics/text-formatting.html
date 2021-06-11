@@ -1,0 +1,362 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="zh-CN" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="zh-CN" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>文本格式 &mdash; Xtaothon Documentation</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+  
+  
+  
+    <link rel="canonical" href="https://docs.xtaolabs.com/topics/text-formatting.html"/>
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/clipboard.min.js"></script>
+        <script src="../_static/copybutton.js"></script>
+        <script src="../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/copybutton.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/tabs.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+    <link rel="index" title="索引" href="../genindex.html" />
+    <link rel="search" title="搜索" href="../search.html" />
+    <link rel="next" title="FAQ" href="../faq.html" />
+    <link rel="prev" title="SOCKS5 Proxy" href="proxy.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html">
+          
+
+          
+            
+            <img src="../_static/xtaothon.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">简介</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../intro/quickstart.html">快速开始</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../intro/install.html">安装指南</a></li>
+</ul>
+<p class="caption"><span class="caption-text">开始</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../start/auth.html">授权</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../start/invoking.html">调用方法</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../start/updates.html">处理消息</a></li>
+</ul>
+<p class="caption"><span class="caption-text">API</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../api/client.html">客户端</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api/methods/index.html">可用方法</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api/types/index.html">可用类型</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api/bound-methods/index.html">绑定方法</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api/handlers.html">消息更新处理器</a></li>
+</ul>
+<p class="caption"><span class="caption-text">主题指南</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="proxy.html">SOCKS5 Proxy</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">文本格式</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id3">基本样式</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#markdown">Markdown 样式</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#html">HTML 样式</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">更多</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../faq.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../glossary.html">常见短语</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../support.html">支持 Xtaothon</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">xtaothon</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content style-external-links">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>文本格式</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            
+              <!-- User defined GitHub URL -->
+              <a href="https://github.com/Xtao-Labs/docs-all" class="fa fa-github"> Edit on GitHub</a>
+            
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="id1">
+<h1>文本格式<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h1>
+<p>Telethon 支持格式化消息为 Markdown 或者 HTML 。</p>
+<div class="contents local topic" id="id2">
+<p class="topic-title">目录</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#id3" id="id4">基本样式</a></p></li>
+<li><p><a class="reference internal" href="#markdown" id="id5">Markdown 样式</a></p></li>
+<li><p><a class="reference internal" href="#html" id="id6">HTML 样式</a></p></li>
+</ul>
+</div>
+<hr class="docutils" />
+<div class="section" id="id3">
+<h2>基本样式<a class="headerlink" href="#id3" title="永久链接至标题">¶</a></h2>
+<p>您可以在 Markdown 样式，HTML 样式之间进行选择。以下是 Telethon 目前支持的基本样式列表。</p>
+<ul class="simple">
+<li><p><strong>bold</strong></p></li>
+<li><p><em>italic</em></p></li>
+<li><p><span class="strike">strike</span></p></li>
+<li><p><span class="underline">underline</span></p></li>
+<li><p><a class="reference external" href="https://docs.xtaolabs.com">text URL</a></p></li>
+<li><p><a class="reference external" href="https://t.me/mrwangzhe">user text mention</a></p></li>
+<li><p><cite>inline fixed-width code</cite></p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">注解</p>
+<p>提及用户功能仅适用于您在对话中见过此用户。</p>
+</div>
+</div>
+<div class="section" id="markdown">
+<h2>Markdown 样式<a class="headerlink" href="#markdown" title="永久链接至标题">¶</a></h2>
+<p><code class="xref py py-meth docutils literal notranslate"><span class="pre">send_message()</span></code> 在消息中使用以下语法：</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>**bold**
+
+__italic__
+
+--underline--
+
+~~strike~~
+
+[text URL](https://docs.xtaolabs.com/)
+
+[text user mention](tg://user?id=347437156)
+
+`inline fixed-width code`
+</pre></div>
+</div>
+<p><strong>Example</strong>:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">app</span><span class="o">.</span><span class="n">send_message</span><span class="p">(</span>
+    <span class="s2">&quot;me&quot;</span><span class="p">,</span>
+    <span class="p">(</span>
+        <span class="s2">&quot;**bold**, &quot;</span>
+        <span class="s2">&quot;__italic__, &quot;</span>
+        <span class="s2">&quot;--underline--, &quot;</span>
+        <span class="s2">&quot;~~strike~~, &quot;</span>
+        <span class="s2">&quot;[mention](tg://user?id=347437156), &quot;</span>
+        <span class="s2">&quot;[URL](https://docs.xtaolabs.com), &quot;</span>
+        <span class="s2">&quot;`code`&quot;</span>
+    <span class="p">)</span>
+<span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="html">
+<h2>HTML 样式<a class="headerlink" href="#html" title="永久链接至标题">¶</a></h2>
+<p><code class="xref py py-meth docutils literal notranslate"><span class="pre">send_message()</span></code> 在消息中使用以下语法：</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>&lt;b&gt;bold&lt;/b&gt;, &lt;strong&gt;bold&lt;/strong&gt;
+
+&lt;i&gt;italic&lt;/i&gt;, &lt;em&gt;italic&lt;/em&gt;
+
+&lt;u&gt;underline&lt;/u&gt;
+
+&lt;s&gt;strike&lt;/s&gt;, &lt;del&gt;strike&lt;/del&gt;, &lt;strike&gt;strike&lt;/strike&gt;
+
+&lt;a href=&quot;http://docs.xtaolabs.com/&quot;&gt;text URL&lt;/a&gt;
+
+&lt;a href=&quot;tg://user?id=347437156&quot;&gt;inline mention&lt;/a&gt;
+
+&lt;code&gt;inline fixed-width code&lt;/code&gt;
+</pre></div>
+</div>
+<p><strong>Example</strong>:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">app</span><span class="o">.</span><span class="n">send_message</span><span class="p">(</span>
+    <span class="s2">&quot;haskell&quot;</span><span class="p">,</span>
+    <span class="p">(</span>
+        <span class="s2">&quot;&lt;b&gt;bold&lt;/b&gt;, &quot;</span>
+        <span class="s2">&quot;&lt;i&gt;italic&lt;/i&gt;, &quot;</span>
+        <span class="s2">&quot;&lt;u&gt;underline&lt;/u&gt;, &quot;</span>
+        <span class="s2">&quot;&lt;s&gt;strike&lt;/s&gt;, &quot;</span>
+        <span class="s2">&quot;&lt;a href=</span><span class="se">\&quot;</span><span class="s2">tg://user?id=347437156</span><span class="se">\&quot;</span><span class="s2">&gt;mention&lt;/a&gt;, &quot;</span>
+        <span class="s2">&quot;&lt;a href=</span><span class="se">\&quot;</span><span class="s2">https://docs.xtaolabs.com/</span><span class="se">\&quot;</span><span class="s2">&gt;URL&lt;/a&gt;, &quot;</span>
+        <span class="s2">&quot;&lt;code&gt;code&lt;/code&gt;&quot;</span>
+    <span class="p">),</span>
+    <span class="n">parse_mode</span><span class="o">=</span><span class="s2">&quot;html&quot;</span>
+<span class="p">)</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">注解</p>
+<p>所有不属于标签或 HTML 实体的 <code class="docutils literal notranslate"><span class="pre">&lt;</span></code>, <code class="docutils literal notranslate"><span class="pre">&gt;</span></code> 和 <code class="docutils literal notranslate"><span class="pre">&amp;</span></code> 符号必须替换为相应的 HTML 实体（
+<code class="docutils literal notranslate"><span class="pre">&lt;</span></code> 替换为 <code class="docutils literal notranslate"><span class="pre">&amp;lt;</span></code>, <code class="docutils literal notranslate"><span class="pre">&gt;</span></code> 替换为 <code class="docutils literal notranslate"><span class="pre">&amp;gt;</span></code> 和 <code class="docutils literal notranslate"><span class="pre">&amp;</span></code> 替换为 <code class="docutils literal notranslate"><span class="pre">&amp;amp;</span></code>)。您可以使用此代码段快速转义这些字符：</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">html</span>
+
+<span class="n">text</span> <span class="o">=</span> <span class="s2">&quot;&lt;my text&gt;&quot;</span>
+<span class="n">text</span> <span class="o">=</span> <span class="n">html</span><span class="o">.</span><span class="n">escape</span><span class="p">(</span><span class="n">text</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">text</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>&amp;lt;my text&amp;gt;
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../faq.html" class="btn btn-neutral float-right" title="FAQ" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="proxy.html" class="btn btn-neutral float-left" title="SOCKS5 Proxy" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(false);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

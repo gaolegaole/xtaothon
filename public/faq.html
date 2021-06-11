@@ -1,0 +1,354 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="zh-CN" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="zh-CN" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>FAQ &mdash; Xtaothon Documentation</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="_static/favicon.ico"/>
+  
+  
+  
+    <link rel="canonical" href="https://docs.xtaolabs.com/faq.html"/>
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/clipboard.min.js"></script>
+        <script src="_static/copybutton.js"></script>
+        <script src="_static/translations.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/copybutton.css" type="text/css" />
+  <link rel="stylesheet" href="_static/tabs.css" type="text/css" />
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+    <link rel="index" title="索引" href="genindex.html" />
+    <link rel="search" title="搜索" href="search.html" />
+    <link rel="next" title="常见短语" href="glossary.html" />
+    <link rel="prev" title="文本格式" href="topics/text-formatting.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html">
+          
+
+          
+            
+            <img src="_static/xtaothon.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">简介</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="intro/quickstart.html">快速开始</a></li>
+<li class="toctree-l1"><a class="reference internal" href="intro/install.html">安装指南</a></li>
+</ul>
+<p class="caption"><span class="caption-text">开始</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="start/auth.html">授权</a></li>
+<li class="toctree-l1"><a class="reference internal" href="start/invoking.html">调用方法</a></li>
+<li class="toctree-l1"><a class="reference internal" href="start/updates.html">处理消息</a></li>
+</ul>
+<p class="caption"><span class="caption-text">API</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="api/client.html">客户端</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api/methods/index.html">可用方法</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api/types/index.html">可用类型</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api/bound-methods/index.html">绑定方法</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api/handlers.html">消息更新处理器</a></li>
+</ul>
+<p class="caption"><span class="caption-text">主题指南</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="topics/proxy.html">SOCKS5 Proxy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="topics/text-formatting.html">文本格式</a></li>
+</ul>
+<p class="caption"><span class="caption-text">更多</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">FAQ</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id2">为什么什么都不提示？</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#floodwaiterror">我怎样才能过滤 FloodWaitError ？</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#telethon">使用 Telethon 时我的帐户被删除/限制</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#sqlite3-operationalerror-database-is-locked">sqlite3.OperationalError: database is locked</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#event-chat-or-event-sender-is-none">event.chat or event.sender is None</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#dcx-dcy">我想将我的帐户从 DCX 迁移到 DCY 。</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id4">为什么我的客户端在超级群组中反应缓慢？</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="glossary.html">常见短语</a></li>
+<li class="toctree-l1"><a class="reference internal" href="support.html">支持 Xtaothon</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">xtaothon</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content style-external-links">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>FAQ</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            
+              <!-- User defined GitHub URL -->
+              <a href="https://github.com/Xtao-Labs/docs-all" class="fa fa-github"> Edit on GitHub</a>
+            
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="faq">
+<h1>FAQ<a class="headerlink" href="#faq" title="永久链接至标题">¶</a></h1>
+<p>此常见问题解答页面提供了有关 Telethon 的常见问题的答案。</p>
+<div class="contents local topic" id="id1">
+<p class="topic-title">目录</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#id2" id="id5">为什么什么都不提示？</a></p></li>
+<li><p><a class="reference internal" href="#floodwaiterror" id="id6">我怎样才能过滤 FloodWaitError ？</a></p></li>
+<li><p><a class="reference internal" href="#telethon" id="id7">使用 Telethon 时我的帐户被删除/限制</a></p></li>
+<li><p><a class="reference internal" href="#sqlite3-operationalerror-database-is-locked" id="id8">sqlite3.OperationalError: database is locked</a></p></li>
+<li><p><a class="reference internal" href="#event-chat-or-event-sender-is-none" id="id9">event.chat or event.sender is None</a></p></li>
+<li><p><a class="reference internal" href="#dcx-dcy" id="id10">我想将我的帐户从 DCX 迁移到 DCY 。</a></p></li>
+<li><p><a class="reference internal" href="#id4" id="id11">为什么我的客户端在超级群组中反应缓慢？</a></p></li>
+</ul>
+</div>
+<hr class="docutils" />
+<div class="section" id="id2">
+<h2>为什么什么都不提示？<a class="headerlink" href="#id2" title="永久链接至标题">¶</a></h2>
+<p>那么它可能有错误，但你还没有启用日志记录。 要启用日志记录，请在主文件顶部添加以下代码：</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">logging</span>
+<span class="n">logging</span><span class="o">.</span><span class="n">basicConfig</span><span class="p">(</span><span class="nb">format</span><span class="o">=</span><span class="s1">&#39;[</span><span class="si">%(levelname) 5s</span><span class="s1">/</span><span class="si">%(asctime)s</span><span class="s1">] </span><span class="si">%(name)s</span><span class="s1">: </span><span class="si">%(message)s</span><span class="s1">&#39;</span><span class="p">,</span>
+                    <span class="n">level</span><span class="o">=</span><span class="n">logging</span><span class="o">.</span><span class="n">WARNING</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>您可以将日志记录级别更改为不同的内容，从较少信息到更多信息：</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">level</span><span class="o">=</span><span class="n">logging</span><span class="o">.</span><span class="n">CRITICAL</span>  <span class="c1"># 不会显示错误（与禁用相同）</span>
+<span class="n">level</span><span class="o">=</span><span class="n">logging</span><span class="o">.</span><span class="n">ERROR</span>     <span class="c1"># 只会显示你没有处理的错误</span>
+<span class="n">level</span><span class="o">=</span><span class="n">logging</span><span class="o">.</span><span class="n">WARNING</span>   <span class="c1"># 还将显示中等严重性的消息，例如内部 Telegram 问题</span>
+<span class="n">level</span><span class="o">=</span><span class="n">logging</span><span class="o">.</span><span class="n">INFO</span>      <span class="c1"># 还将显示信息性消息，例如连接或断开连接</span>
+<span class="n">level</span><span class="o">=</span><span class="n">logging</span><span class="o">.</span><span class="n">DEBUG</span>     <span class="c1"># 将显示大量输出以帮助调试库中的问题</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="floodwaiterror">
+<h2>我怎样才能过滤 FloodWaitError ？<a class="headerlink" href="#floodwaiterror" title="永久链接至标题">¶</a></h2>
+<p>您可以通过导入 API 中的自定义错误来过滤：</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">telethon</span> <span class="kn">import</span> <span class="n">errors</span>
+<span class="k">try</span><span class="p">:</span>
+    <span class="k">await</span> <span class="n">client</span><span class="o">.</span><span class="n">send_message</span><span class="p">(</span><span class="n">chat</span><span class="p">,</span> <span class="s1">&#39;Hi&#39;</span><span class="p">)</span>
+<span class="k">except</span> <span class="n">errors</span><span class="o">.</span><span class="n">FloodWaitError</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+    <span class="c1"># e.seconds 是您被限制了多少秒才能重新调用此 API 。</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Flood for&#39;</span><span class="p">,</span> <span class="n">e</span><span class="o">.</span><span class="n">seconds</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="telethon">
+<h2>使用 Telethon 时我的帐户被删除/限制<a class="headerlink" href="#telethon" title="永久链接至标题">¶</a></h2>
+<p>如果您出于恶意使用 Telethon ，Telegram 可能会禁止您。</p>
+<p>但是，您也可能是某个限制国家/地区的一部分，例如伊朗或俄罗斯。在这种情况下，我们有一个坏消息要告诉你。
+Telegram 更有可能禁止这些号码，因为它们经常被用来向其他帐户发送垃圾消息，并且可能是通过使用这样的库。
+我们可以给您的最佳建议是不要滥用 API，例如非常快速地调用许多请求，并且建议您通过官方应用程序注册账户。</p>
+<p>我们也收到了来自哈萨克斯坦和中国的报告，在那里会无法连接 Telegram 服务器。要解决这些连接问题，您应该:doc:<cite>使用代理 &lt;topics/proxy&gt;</cite>。</p>
+<p>Telegram 还可能禁止虚拟 (VoIP) 电话号码，因为它们很可能被用于发送垃圾消息。</p>
+<p>如果您想检查您的帐户是否受到限制，只需向 Telegram 官方 Bot <code class="docutils literal notranslate"><span class="pre">&#64;SpamBot</span></code> 发送消息即可。
+您应该通过收到 <code class="docutils literal notranslate"><span class="pre">PeerFloodError</span></code> 之类的错误来注意到这一点，这意味着您受到限制。</p>
+</div>
+<div class="section" id="sqlite3-operationalerror-database-is-locked">
+<h2>sqlite3.OperationalError: database is locked<a class="headerlink" href="#sqlite3-operationalerror-database-is-locked" title="永久链接至标题">¶</a></h2>
+<p>较旧的进程仍在运行并使用相同的 “session” 文件。</p>
+<p>当两个或多个客户端使用同一个会话时，会出现此错误：</p>
+<p>您有一个使用相同会话文件的旧进程。
+您有两个不同的脚本正在运行（交互式会话也算在内）。
+您在同一脚本中有两个客户端同时运行。</p>
+<p>解决方案是，如果您需要两个客户端，请使用两个会话。如果问题仍然存在并且您使用的是 Linux，则可以使用 <code class="docutils literal notranslate"><span class="pre">fuser</span> <span class="pre">my.session</span></code> 找出锁定文件的进程。
+作为最后的手段，您可以重新启动系统。</p>
+</div>
+<div class="section" id="event-chat-or-event-sender-is-none">
+<h2>event.chat or event.sender is None<a class="headerlink" href="#event-chat-or-event-sender-is-none" title="永久链接至标题">¶</a></h2>
+<p>Telegram 为节省带宽并不总是发送此信息。如果您需要这些信息，您应该自己获取，因为除非您需要，否则库不会做不必要的工作：</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">async</span> <span class="k">def</span> <span class="nf">handler</span><span class="p">(</span><span class="n">event</span><span class="p">):</span>
+    <span class="n">chat</span> <span class="o">=</span> <span class="k">await</span> <span class="n">event</span><span class="o">.</span><span class="n">get_chat</span><span class="p">()</span>
+    <span class="n">sender</span> <span class="o">=</span> <span class="k">await</span> <span class="n">event</span><span class="o">.</span><span class="n">get_sender</span><span class="p">()</span>
+</pre></div>
+</div>
+<p><strong>*</strong> Alias DC</p>
+<p>感谢 <a class="reference external" href="https://t.me/tgbetachat/104921">&#64;FrayxRulez</a> 告诉我们 Telegram DC 存在别名服务器。</p>
+</div>
+<div class="section" id="dcx-dcy">
+<h2>我想将我的帐户从 DCX 迁移到 DCY 。<a class="headerlink" href="#dcx-dcy" title="永久链接至标题">¶</a></h2>
+<p>首次注册帐户时，由 Telegram 根据电话号码来源决定将在哪个 DC 中创建新用户。</p>
+<p>尽管 <a class="reference external" href="https://core.telegram.org/api/datacenter#user-migration">Telegram 文档</a> 说明：服务器可能会自动迁移用户，
+尽管 Telegram 本身也 <a class="reference external" href="https://twitter.com/telegram/status/427131446655197184">确认</a> 存在此机制，但目前无法在任何情况下手动迁移您的帐户。
+仅仅是因为该功能曾经计划但尚未实施。</p>
+<p>感谢 <a class="reference external" href="https://t.me/AnotherGroup/217699">&#64;gabriel</a> 确认该功能尚未实现。</p>
+</div>
+<div class="section" id="id4">
+<h2>为什么我的客户端在超级群组中反应缓慢？<a class="headerlink" href="#id4" title="永久链接至标题">¶</a></h2>
+<p>此问题仅影响某些超级群组或超级群组中的某些成员。</p>
+<p>由于 Telegram 内部的工作方式，您从其他成员接收和发送给其他成员的每条消息都必须通过群组创建者的 DC，在最坏的情况下，你、创建者和其他成员属于三个不同的
+DC，其他成员的消息必须从他的 DC 传递到创建者的 DC，最后到达您的 DC。这个过程将不可避免地需要时间。</p>
+<p>另一个导致响应缓慢的原因是消息是 <strong>按优先级调度</strong> 的。 根据成员身份，一些用户比其他用户更快地接收消息，对于大而繁忙的超级群组，延迟可能会变得
+令人注意，特别是如果您属于优先级列表的低端：</p>
+<ol class="arabic simple">
+<li><p>创建者。</p></li>
+<li><p>管理员。</p></li>
+<li><p>Bots。</p></li>
+<li><p>提及到的用户。</p></li>
+<li><p>近期在线用户。</p></li>
+<li><p>其他成员。</p></li>
+</ol>
+<p>感谢 <a class="reference external" href="https://t.me/PyrogramChat/76990">&#64;Manuel15</a> 提供优先级列表</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="glossary.html" class="btn btn-neutral float-right" title="常见短语" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="topics/text-formatting.html" class="btn btn-neutral float-left" title="文本格式" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(false);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

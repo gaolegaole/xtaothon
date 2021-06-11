@@ -1,0 +1,319 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="zh-CN" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="zh-CN" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>edit_message() &mdash; Xtaothon Documentation</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+  
+  
+  
+    <link rel="canonical" href="https://docs.xtaolabs.com/api/methods/edit_message.html"/>
+  
+
+  
+  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/clipboard.min.js"></script>
+        <script src="../../_static/copybutton.js"></script>
+        <script src="../../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/copybutton.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/tabs.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+    <link rel="index" title="索引" href="../../genindex.html" />
+    <link rel="search" title="搜索" href="../../search.html" />
+    <link rel="next" title="delete_messages()" href="delete_messages.html" />
+    <link rel="prev" title="send_message()" href="send_message.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html">
+          
+
+          
+            
+            <img src="../../_static/xtaothon.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">简介</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../intro/quickstart.html">快速开始</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../intro/install.html">安装指南</a></li>
+</ul>
+<p class="caption"><span class="caption-text">开始</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../start/auth.html">授权</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../start/invoking.html">调用方法</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../start/updates.html">处理消息</a></li>
+</ul>
+<p class="caption"><span class="caption-text">API</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../client.html">客户端</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">可用方法</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="index.html#id3">基础</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html#id4">消息</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="send_message.html">send_message</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">edit_message</a></li>
+<li class="toctree-l3"><a class="reference internal" href="delete_messages.html">delete_messages</a></li>
+<li class="toctree-l3"><a class="reference internal" href="forward_messages.html">forward_messages</a></li>
+<li class="toctree-l3"><a class="reference internal" href="iter_messages.html">iter_messages</a></li>
+<li class="toctree-l3"><a class="reference internal" href="get_messages.html">get_messages</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pin_message.html">pin_message</a></li>
+<li class="toctree-l3"><a class="reference internal" href="unpin_message.html">unpin_message</a></li>
+<li class="toctree-l3"><a class="reference internal" href="send_read_acknowledge.html">send_read_acknowledge</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#id5">上传</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#id6">下载</a></li>
+<li class="toctree-l2"><a class="reference internal" href="index.html#id7">用户</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../types/index.html">可用类型</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../bound-methods/index.html">绑定方法</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../handlers.html">消息更新处理器</a></li>
+</ul>
+<p class="caption"><span class="caption-text">主题指南</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../topics/proxy.html">SOCKS5 Proxy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../topics/text-formatting.html">文本格式</a></li>
+</ul>
+<p class="caption"><span class="caption-text">更多</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../faq.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../glossary.html">常见短语</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../support.html">支持 Xtaothon</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">xtaothon</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content style-external-links">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="index.html">可用方法</a> &raquo;</li>
+        
+      <li>edit_message()</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            
+              <!-- User defined GitHub URL -->
+              <a href="https://github.com/Xtao-Labs/docs-all" class="fa fa-github"> Edit on GitHub</a>
+            
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="edit-message">
+<h1>edit_message()<a class="headerlink" href="#edit-message" title="永久链接至标题">¶</a></h1>
+<dl class="py method">
+<dt id="telethon.Client.edit_message">
+<code class="sig-prename descclassname"><span class="pre">Client.</span></code><code class="sig-name descname"><span class="pre">edit_message</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#telethon.Client.edit_message" title="永久链接至目标">¶</a></dt>
+<dd><p>编辑指定消息，更改其文本或媒体文件。</p>
+<dl>
+<dt>参数:</dt><dd><dl>
+<dt>entity (<a class="reference internal" href="../types/user.html#telethon.tl.types.user" title="telethon.tl.types.user"><code class="xref py py-obj docutils literal notranslate"><span class="pre">user</span></code></a> | <a class="reference internal" href="../types/chat.html#telethon.tl.types.chat" title="telethon.tl.types.chat"><code class="xref py py-obj docutils literal notranslate"><span class="pre">chat</span></code></a> | <a class="reference internal" href="../types/channel.html#telethon.tl.types.channel" title="telethon.tl.types.channel"><code class="xref py py-obj docutils literal notranslate"><span class="pre">channel</span></code></a>):</dt><dd><p>接收消息的对象</p>
+</dd>
+<dt>text (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>可选</em>):</dt><dd><p>要编辑的消息文本。</p>
+<p>消息的最大长度为 <code class="docutils literal notranslate"><span class="pre">35,000</span></code> 字节或 <code class="docutils literal notranslate"><span class="pre">4,096</span></code> 个字符。</p>
+</dd>
+<dt>message (<code class="docutils literal notranslate"><span class="pre">int</span></code> | <code class="docutils literal notranslate"><span class="pre">str</span></code> | <a class="reference internal" href="../types/message.html#telethon.tl.types.message" title="telethon.tl.types.message"><code class="xref py py-obj docutils literal notranslate"><span class="pre">message</span></code></a>, <em>可选</em>):</dt><dd><p>要编辑的消息 id 或者消息对象。</p>
+</dd>
+<dt>parse_mode (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>可选</em>):</dt><dd><p>文本格式解析器配置。值支持 <cite>markdown</cite> （<cite>md</cite>)， <cite>html</cite> （<cite>htm</cite>)， <cite>None</cite>。</p>
+</dd>
+<dt>link_preview (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>可选</em>):</dt><dd><p>配置是否展示消息预览，默认开启。</p>
+</dd>
+<dt>file (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <code class="docutils literal notranslate"><span class="pre">bytes</span></code>, <em>可选</em>):</dt><dd><p>如果参数为 <code class="docutils literal notranslate"><span class="pre">str</span></code> ，则将再此路径下寻找文件（支持相对/绝对路径）。</p>
+<p>请注意：如果原消息为纯文本时，配置此项将会报错。</p>
+</dd>
+<dt>buttons (<code class="docutils literal notranslate"><span class="pre">list</span></code>), <em>可选</em>):</dt><dd><p>配置消息按钮，参见示例，仅支持 bot 登录时。</p>
+<dl class="simple">
+<dt>限制：</dt><dd><p>最多可以有 <code class="docutils literal notranslate"><span class="pre">100</span></code> 个按钮（更多将被忽略）。
+每行最多可以有 <code class="docutils literal notranslate"><span class="pre">8</span></code> 个按钮（更多将被忽略）。
+按钮的最大回调数据为 <code class="docutils literal notranslate"><span class="pre">64</span></code> 字节。</p>
+</dd>
+</dl>
+</dd>
+<dt>schedule (<code class="docutils literal notranslate"><span class="pre">float</span></code>, <em>可选</em>):</dt><dd><p>配置是否定时消息，默认不配置。</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">引发</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>MessageAuthorRequiredError</strong> – 如果您不是消息的发送者。</p></li>
+<li><p><strong>MessageNotModifiedError</strong> – 如果要编辑的消息和原消息一样。</p></li>
+<li><p><strong>MessageIdInvalidError</strong> – 如果消息的 ID 无效（消息 ID 本身可能是正确的，但无法编辑此 ID 对应的消息。）</p></li>
+</ul>
+</dd>
+</dl>
+<p class="rubric">示例</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">message</span> <span class="o">=</span> <span class="k">await</span> <span class="n">client</span><span class="o">.</span><span class="n">send_message</span><span class="p">(</span><span class="n">chat</span><span class="p">,</span> <span class="s1">&#39;你好&#39;</span><span class="p">)</span>
+
+<span class="k">await</span> <span class="n">client</span><span class="o">.</span><span class="n">edit_message</span><span class="p">(</span><span class="n">chat</span><span class="p">,</span> <span class="n">message</span><span class="p">,</span> <span class="s1">&#39;你好!&#39;</span><span class="p">)</span>
+<span class="c1"># 或者</span>
+<span class="k">await</span> <span class="n">client</span><span class="o">.</span><span class="n">edit_message</span><span class="p">(</span><span class="n">chat</span><span class="p">,</span> <span class="n">message</span><span class="o">.</span><span class="n">id</span><span class="p">,</span> <span class="s1">&#39;你好!!&#39;</span><span class="p">)</span>
+<span class="c1"># 或者</span>
+<span class="k">await</span> <span class="n">client</span><span class="o">.</span><span class="n">edit_message</span><span class="p">(</span><span class="n">message</span><span class="p">,</span> <span class="s1">&#39;你好!!!&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="delete_messages.html" class="btn btn-neutral float-right" title="delete_messages()" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="send_message.html" class="btn btn-neutral float-left" title="send_message()" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(false);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

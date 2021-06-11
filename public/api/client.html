@@ -1,0 +1,304 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="zh-CN" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="zh-CN" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>客户端 &mdash; Xtaothon Documentation</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+  
+  
+  
+    <link rel="canonical" href="https://docs.xtaolabs.com/api/client.html"/>
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/clipboard.min.js"></script>
+        <script src="../_static/copybutton.js"></script>
+        <script src="../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/copybutton.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/tabs.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+    <link rel="index" title="索引" href="../genindex.html" />
+    <link rel="search" title="搜索" href="../search.html" />
+    <link rel="next" title="可用方法" href="methods/index.html" />
+    <link rel="prev" title="处理消息" href="../start/updates.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html">
+          
+
+          
+            
+            <img src="../_static/xtaothon.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">简介</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../intro/quickstart.html">快速开始</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../intro/install.html">安装指南</a></li>
+</ul>
+<p class="caption"><span class="caption-text">开始</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../start/auth.html">授权</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../start/invoking.html">调用方法</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../start/updates.html">处理消息</a></li>
+</ul>
+<p class="caption"><span class="caption-text">API</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">客户端</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id2">详细信息</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="methods/index.html">可用方法</a></li>
+<li class="toctree-l1"><a class="reference internal" href="types/index.html">可用类型</a></li>
+<li class="toctree-l1"><a class="reference internal" href="bound-methods/index.html">绑定方法</a></li>
+<li class="toctree-l1"><a class="reference internal" href="handlers.html">消息更新处理器</a></li>
+</ul>
+<p class="caption"><span class="caption-text">主题指南</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../topics/proxy.html">SOCKS5 Proxy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../topics/text-formatting.html">文本格式</a></li>
+</ul>
+<p class="caption"><span class="caption-text">更多</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../faq.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../glossary.html">常见短语</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../support.html">支持 Xtaothon</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">xtaothon</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content style-external-links">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>客户端</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            
+              <!-- User defined GitHub URL -->
+              <a href="https://github.com/Xtao-Labs/docs-all" class="fa fa-github"> Edit on GitHub</a>
+            
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="id1">
+<h1>客户端<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h1>
+<p>您已进入API参考部分，您可以在其中找到有关 Telethon 的 API 的详细信息。</p>
+<p>此页面是关于 Client 类的，它公开了一些高级方法，以便更加轻松访问 API 。</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="hll"><span class="kn">from</span> <span class="nn">telethon.sync</span> <span class="kn">import</span> <span class="n">TelegramClient</span><span class="p">,</span> <span class="n">events</span>
+</span><span class="hll">
+</span><span class="hll"><span class="n">app</span> <span class="o">=</span> <span class="n">Client</span><span class="p">(</span><span class="s2">&quot;my_account&quot;</span><span class="p">,</span> <span class="n">api_id</span><span class="p">,</span> <span class="n">api_hash</span><span class="p">)</span>
+</span>
+<span class="k">async</span> <span class="k">def</span> <span class="nf">handler</span><span class="p">(</span><span class="n">context</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">context</span><span class="o">.</span><span class="n">text</span><span class="p">)</span>
+
+<span class="n">app</span><span class="o">.</span><span class="n">add_event_handler</span><span class="p">(</span><span class="n">handler</span><span class="p">,</span> <span class="n">events</span><span class="o">.</span><span class="n">NewMessage</span><span class="p">(</span><span class="o">**</span><span class="n">args</span><span class="p">))</span>
+
+<span class="n">app</span><span class="o">.</span><span class="n">run_until_disconnected</span><span class="p">()</span>
+</pre></div>
+</div>
+<hr class="docutils" />
+<div class="section" id="id2">
+<h2>详细信息<a class="headerlink" href="#id2" title="永久链接至标题">¶</a></h2>
+<dl class="py class">
+<dt id="telethon.Client">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">telethon.</span></code><code class="sig-name descname"><span class="pre">Client</span></code><a class="headerlink" href="#telethon.Client" title="永久链接至目标">¶</a></dt>
+<dd><p>Telethon Client，与 Telegram 互动的主要手段。</p>
+<dl>
+<dt>参数:</dt><dd><dl>
+<dt>session (<code class="docutils literal notranslate"><span class="pre">str</span></code>):</dt><dd><p>如果给出了字符串（它可以是完整路径）则将会保存 <code class="docutils literal notranslate"><span class="pre">.session</span></code> 文件；如果没有，则不会保存会话，并且在程序结束后，您应该调用
+<cite>client.log_out()</cite> 。</p>
+<p>请注意，如果传递字符串，则文件将保存为当前工作目录下，并且您还可以传递绝对路径。</p>
+</dd>
+<dt>api_id (<code class="docutils literal notranslate"><span class="pre">int</span></code> | <code class="docutils literal notranslate"><span class="pre">str</span></code>):</dt><dd><p>从 <a class="reference external" href="https://my.telegram.org">https://my.telegram.org</a> 获取到的 <em>api_id</em> 。</p>
+</dd>
+<dt>api_hash (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>):</dt><dd><p>从 <a class="reference external" href="https://my.telegram.org">https://my.telegram.org</a> 获取到的 <em>api_hash</em> 。</p>
+</dd>
+<dt>bot_token （<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>可选</em>):</dt><dd><p>如果设置了 Bot token，则将直接使用 Bot 身份登录。</p>
+</dd>
+<dt>app_version (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>可选</em>):</dt><dd><p>应用版本号，默认设置为 <cite>telethon.version.__version__</cite> 。</p>
+</dd>
+<dt>device_model (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>):</dt><dd><p>设备型号，默认设置为 <cite>·`platform.uname().machine</cite> 。</p>
+</dd>
+<dt>system_version (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>):</dt><dd><p>操作系统版本，默认设置为 <cite>platform.uname().release</cite> 。</p>
+</dd>
+<dt>lang_code (<code class="docutils literal notranslate"><span class="pre">str</span></code>, <em>optional</em>):</dt><dd><p>客户端上使用的 ISO 639-1 标准的语言代码。默认为 “en”。</p>
+</dd>
+<dt>use_ipv6 (<code class="docutils literal notranslate"><span class="pre">bool</span></code>, <em>可选</em>):</dt><dd><p>如果设置为 <cite>True</cite> ，则将使用 ipv6 连接 Telegram 服务器。默认关闭 (通过 IPv4).</p>
+</dd>
+<dt>proxy (<code class="docutils literal notranslate"><span class="pre">tuple</span></code>, <code class="docutils literal notranslate"><span class="pre">str</span></code>, <code class="docutils literal notranslate"><span class="pre">dict</span></code>, <em>可选</em>):</dt><dd><p>MTProxy: <cite>(‘hostname’, port, ‘secret’)</cite> ；socks5: <cite>(socks.SOCKS5, “socks.example.com”, 1080)</cite> 获取更多
+代理配置详情：<a class="reference external" href="https://github.com/Anorov/PySocks#usage-1">https://github.com/Anorov/PySocks#usage-1</a></p>
+</dd>
+<dt>timeout (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <code class="docutils literal notranslate"><span class="pre">float</span></code>, <em>可选</em>):</dt><dd><p>设置链接超时所要等待的秒数。</p>
+</dd>
+<dt>flood_sleep_threshold (<code class="docutils literal notranslate"><span class="pre">int</span></code>, <code class="docutils literal notranslate"><span class="pre">float</span></code>, <em>可选</em>):</dt><dd><p>设置当出现 <cite>FloodWaitError</cite> 时自动休眠应用程序的时间。</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="methods/index.html" class="btn btn-neutral float-right" title="可用方法" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../start/updates.html" class="btn btn-neutral float-left" title="处理消息" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(false);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

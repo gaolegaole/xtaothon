@@ -1,0 +1,303 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="zh-CN" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="zh-CN" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>授权 &mdash; Xtaothon Documentation</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+  
+  
+  
+    <link rel="canonical" href="https://docs.xtaolabs.com/start/auth.html"/>
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/clipboard.min.js"></script>
+        <script src="../_static/copybutton.js"></script>
+        <script src="../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/copybutton.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/tabs.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+    <link rel="index" title="索引" href="../genindex.html" />
+    <link rel="search" title="搜索" href="../search.html" />
+    <link rel="next" title="调用方法" href="invoking.html" />
+    <link rel="prev" title="安装指南" href="../intro/install.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html">
+          
+
+          
+            
+            <img src="../_static/xtaothon.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">简介</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../intro/quickstart.html">快速开始</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../intro/install.html">安装指南</a></li>
+</ul>
+<p class="caption"><span class="caption-text">开始</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">授权</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#api-key">API key</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id3">登录</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="invoking.html">调用方法</a></li>
+<li class="toctree-l1"><a class="reference internal" href="updates.html">处理消息</a></li>
+</ul>
+<p class="caption"><span class="caption-text">API</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../api/client.html">客户端</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api/methods/index.html">可用方法</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api/types/index.html">可用类型</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api/bound-methods/index.html">绑定方法</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api/handlers.html">消息更新处理器</a></li>
+</ul>
+<p class="caption"><span class="caption-text">主题指南</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../topics/proxy.html">SOCKS5 Proxy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../topics/text-formatting.html">文本格式</a></li>
+</ul>
+<p class="caption"><span class="caption-text">更多</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../faq.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../glossary.html">常见短语</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../support.html">支持 Xtaothon</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">xtaothon</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content style-external-links">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>授权</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            
+              <!-- User defined GitHub URL -->
+              <a href="https://github.com/Xtao-Labs/docs-all" class="fa fa-github"> Edit on GitHub</a>
+            
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="id1">
+<h1>授权<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h1>
+<p>本节教程将会教会您如何使用 Telethon 登录 Bot 或者 User 。</p>
+<div class="contents local topic" id="id2">
+<p class="topic-title">目录</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#api-key" id="id5">API key</a></p></li>
+<li><p><a class="reference internal" href="#id3" id="id6">登录</a></p></li>
+</ul>
+</div>
+<hr class="docutils" />
+<div class="section" id="api-key">
+<h2>API key<a class="headerlink" href="#api-key" title="永久链接至标题">¶</a></h2>
+<p>在 <a class="reference internal" href="../intro/quickstart.html"><span class="doc">快速开始</span></a> 中需要您申请属于您自己的 Telegram API key 。</p>
+<ol class="arabic simple">
+<li><p>访问 <a class="reference external" href="https://my.telegram.org/apps">https://my.telegram.org/apps</a> 并且使用您的 Telegram 账户登录。</p></li>
+<li><p>填写表格以注册新的 Telegram 应用程序。</p></li>
+<li><p>完成! API key 由这两个值组成： <strong>api_id</strong> 和 <strong>api_hash</strong>.</p></li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">注解</p>
+<p>API key 对每个用户是唯一的，并且仅一个值就可以授权多个 User （和 bot） 通过 MTProto API 访问 Telegram 数据库。</p>
+</div>
+</div>
+<div class="section" id="id3">
+<h2>登录<a class="headerlink" href="#id3" title="永久链接至标题">¶</a></h2>
+<p>为了使用这个 API, Telegram 要求用户通过电话号码授权。
+Telethon 将会自动处理此过程，您需要做的只是创建一个实例 <a class="reference internal" href="../api/client.html#telethon.Client" title="telethon.Client"><code class="xref py py-class docutils literal notranslate"><span class="pre">Client</span></code></a> 类并且定义一个 <code class="docutils literal notranslate"><span class="pre">session_name</span></code>  (e.g.: “my_account”)
+并且调用 <a class="reference internal" href="../api/methods/start.html#telethon.Client.start" title="telethon.Client.start"><code class="xref py py-meth docutils literal notranslate"><span class="pre">start()</span></code></a> 方法:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">telethon</span> <span class="kn">import</span> <span class="n">TelegramClient</span>
+
+<span class="n">client</span> <span class="o">=</span> <span class="n">TelegramClient</span><span class="p">(</span><span class="s1">&#39;my_account&#39;</span><span class="p">,</span> <span class="n">api_id</span><span class="p">,</span> <span class="n">api_hash</span><span class="p">)</span>
+
+<span class="c1"># 使用 Bot token 登录</span>
+<span class="k">await</span> <span class="n">client</span><span class="o">.</span><span class="n">start</span><span class="p">(</span><span class="n">bot_token</span><span class="o">=</span><span class="s1">&#39;bot_token&#39;</span><span class="p">)</span>
+
+<span class="c1"># 使用 User 账户登录</span>
+<span class="k">await</span> <span class="n">client</span><span class="o">.</span><span class="n">start</span><span class="p">()</span>
+<span class="c1"># Enter phone number: +86**********</span>
+<span class="c1"># Please enter the code you received: 12345</span>
+<span class="c1"># Please enter your password: *******</span>
+<span class="c1"># (You are now logged in)</span>
+
+<span class="c1"># 使用一个 context manager 来登录 (这相当于直接调用 start()):</span>
+<span class="k">with</span> <span class="n">client</span><span class="p">:</span>
+    <span class="k">pass</span>
+</pre></div>
+</div>
+<p>这会创建一个交互 Shell 要求您输入 <strong>电话号码</strong> (包括您的 <a class="reference external" href="https://en.wikipedia.org/wiki/List_of_country_calling_codes">国家代码</a>) 和 <strong>验证码</strong>:</p>
+<p>成功登录后，将创建一个名为 <code class="docutils literal notranslate"><span class="pre">my_account.session</span></code> 的新文件，允许 Telethon 使用您的登录的账户信息执行 API。
+重新启动应用程序时，将自动加载此文件，只要您的账户登录文件还是可用的，Telethon 将不会要求您重新登录。</p>
+<div class="admonition important">
+<p class="admonition-title">重要</p>
+<p>您的 <code class="docutils literal notranslate"><span class="pre">*.session</span></code> 文件是私密的并且必须保证安全。</p>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="invoking.html" class="btn btn-neutral float-right" title="调用方法" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../intro/install.html" class="btn btn-neutral float-left" title="安装指南" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(false);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
