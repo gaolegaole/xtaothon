@@ -66,7 +66,8 @@ exclude_patterns = []
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 #
-html_theme = 'sphinx_rtd_theme'
+html_theme = "sphinx_rtd_theme"
+html_theme_path = ["_themes", ]
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
@@ -79,9 +80,6 @@ pygments_style = "friendly"
 
 copybutton_prompt_text = "$ "
 
-html_css_files = [
-    'css/theme.css',
-]
 html_title = "Xtaothon Documentation"
 html_show_sourcelink = True
 html_show_copyright = False

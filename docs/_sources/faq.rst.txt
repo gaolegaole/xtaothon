@@ -91,9 +91,6 @@ Telegram 为节省带宽并不总是发送此信息。如果您需要这些信�
         chat = await event.get_chat()
         sender = await event.get_sender()
 
-***** Alias DC
-
-感谢 `@FrayxRulez <https://t.me/tgbetachat/104921>`_ 告诉我们 Telegram DC 存在别名服务器。
 
 我想将我的帐户从 DCX 迁移到 DCY 。
 ---------------------------------------------
